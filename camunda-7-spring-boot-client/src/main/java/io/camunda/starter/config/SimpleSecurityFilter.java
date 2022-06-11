@@ -1,4 +1,4 @@
-package io.camunda.getstarted.config;
+package io.camunda.starter.config;
 
 import org.springframework.stereotype.Component;
 

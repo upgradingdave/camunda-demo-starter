@@ -1,4 +1,4 @@
-package io.camunda.getstarted.controller;
+package io.camunda.starter.controller;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

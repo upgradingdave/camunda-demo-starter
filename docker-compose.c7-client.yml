@@ -23,7 +23,7 @@ services:
     volumes:
       - ./certs:/opt/certs
     environment:
-      PROFILES: cors,prod
+      PROFILES: cors,prod,email
       PORT: 8080
       CAMUNDA_API: http://camunda-7:8080/engine-rest/message
 #      VM_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap

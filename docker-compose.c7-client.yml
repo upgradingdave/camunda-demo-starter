@@ -25,7 +25,9 @@ services:
     environment:
       PROFILES: cors,prod,email
       PORT: 8080
-      CAMUNDA_API: http://camunda-7:8080/engine-rest/message
+      CAMUNDA_API: http://camunda-7:8080/engine-rest
+      MAIL_HOST: smtp
+      MAIL_PORT: 2500
 #      VM_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
     deploy:
       resources:
@@ -44,3 +46,4 @@ services:
       - camunda-platform
     depends_on:
       - camunda-7
+      - smtp

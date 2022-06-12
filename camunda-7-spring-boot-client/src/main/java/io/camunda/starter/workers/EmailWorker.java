@@ -23,7 +23,7 @@ public class EmailWorker {
     ExternalTaskClient client;
     TopicSubscriptionBuilder topicSubscriptionBuilder;
 
-    public EmailWorker(@Value("${camunda.bpm.restApiUrl}") String restApiUrl,
+    public EmailWorker(@Value("${camunda.api}") String restApiUrl,
                        EmailService emailService
     ) {
         this.restApiUrl = restApiUrl;
